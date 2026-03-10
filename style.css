@@ -198,3 +198,23 @@ body {
     .menu-hamburger.is-active .bar:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
 }
 
+.map-section {
+    padding: 60px 7%;
+    background-color: var(--gray);
+}
+
+.map-section h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.map-section h2 span {
+    color: var(--primary);
+}
+
+.map-container {
+    border-radius: 15px;
+    overflow: hidden; /* Faz as bordas do mapa ficarem arredondadas */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
