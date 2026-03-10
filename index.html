@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOME DA EMPRESA | Fabricação e Montagem Industrial</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">Nome<span> da empresa</span></div>
+        
+        <div class="menu-hamburger" id="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+        <ul class="nav-links" id="nav-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#contato" class="btn-nav">Orçamento</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Soluções em <span>Solda e Montagem</span> de Máquinas</h1>
+                <p>Especialistas em fabricação industrial, tubulação e elétrica com foco em precisão e durabilidade.</p>
+                <div class="hero-btns">
+                    <a href="https://wa.me/5511999999999" class="btn-primary">Falar com Especialista</a>
+                    <a href="#servicos" class="btn-secondary">Ver Serviços</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="servicos" class="services">
+            <h2>Nossa Expertise</h2>
+            <div class="grid-services">
+                <div class="card">
+                    <h3>Solda MIG/TIG</h3>
+                    <p>Processos de alta resistência para estruturas metálicas complexas.</p>
+                </div>
+                <div class="card">
+                    <h3>Montagem</h3>
+                    <p>Montagem técnica de máquinas e equipamentos industriais.</p>
+                </div>
+                <div class="card">
+                    <h3>Elétrica & Tubulação</h3>
+                    <p>Infraestrutura completa para plantas industriais de pequeno e grande porte.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="contact-section">
+            <div class="container">
+                <h2>Solicite um <span>Orçamento</span></h2>
+                <p>Preencha os dados e nossa equipe entrará em contato.</p>
+
+                <form id="contact-form">
+                    <div class="input-group">
+                        <label for="nome">Nome Completo</label>
+                        <input type="text" id="nome" name="nome" placeholder="Ex: João Silva" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="email">E-mail para Retorno</label>
+                        <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="servico">Tipo de Serviço</label>
+                        <select id="servico" name="servico" required>
+                            <option value="" disabled selected>Selecione um serviço</option>
+                            <option value="Solda">Solda (MIG/TIG)</option>
+                            <option value="Montagem">Montagem de Máquinas</option>
+                            <option value="Tubulação">Tubulação Industrial</option>
+                            <option value="Outros">Outros</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="mensagem">Detalhes do Projeto</label>
+                        <textarea id="mensagem" name="mensagem" rows="4" placeholder="Descreva o que você precisa..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-submit">Enviar Solicitação</button>
+                    <p id="form-status" style="display:none; margin-top: 15px; font-weight: bold; color: #00b090;"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer style="text-align: center; padding: 20px; background: #121214; color: white;">
+        <p>&copy; 2026 Nome da Empresa - Todos os direitos reservados.</p>
+    </footer>
+
+    <a href="https://wa.me/5511999999999" class="whatsapp-float" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
